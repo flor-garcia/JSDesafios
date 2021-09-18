@@ -23,8 +23,8 @@ I regreted and I want to EXIT`
 
 /* Variables declaradas */
 let day;
-let hour;
-let regards = `Thanks for visiting us. See you soon!`
+let hour = " ";
+let regards = `Thanks for visiting us. See you soon!`;
 let add;
 let resp;
 
