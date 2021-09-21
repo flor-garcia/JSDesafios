@@ -2,37 +2,37 @@
 
 
 /* Servicde list */
-let service = `Select a service: 
+/* let service = `Select a service: 
 Manicure
 Pedicure
 Manicure & Pedicure
 
-If you want to leave type EXIT`
+If you want to leave type EXIT` */
 
 /* Dias disponibles */
-let dayOfAppointment = `Select a day for your appointment:
+/* let dayOfAppointment = `Select a day for your appointment:
 Monday
 Thuesday
 Wednesday
 Thursday
 Friday.
 
-I regreted and I want to EXIT`
+I regreted and I want to EXIT` */
 
 
 
 /* Variables declaradas */
-let day;
+/* let day;
 let hour = " ";
 let regards = `Thanks for visiting us. See you soon!`;
 let add;
-let resp;
+let resp; */
 
 
 /* Price list */
-let priceOfManicure = 45000;
+/* let priceOfManicure = 45000;
 let priceOfPedicure = 25000;
-let priceOfManicurePedicure = 60000;
+let priceOfManicurePedicure = 60000; */
 
 
 

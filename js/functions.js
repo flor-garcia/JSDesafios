@@ -2,7 +2,7 @@
 
 
 /* Esta funcion muestra los horarios disponibles en funcion al servicio elegido por el cliente */
-function hourOfAppointment (appointment) {
+/* function hourOfAppointment (appointment) {
     switch (appointment) {
         case "Manicure": 
         prompt(`The hours availiable are:
@@ -25,14 +25,14 @@ function hourOfAppointment (appointment) {
         default:
         break;
     }
-}
+} */
 
 /* esta funcion calcula el IVA (en Chile, por eso el 19% jajaj) */
-const tax = price => price * 1.19
+/* const tax = price => price * 1.19 */
 
 
 /* esta funcion calcula el precio final del servicio seleccionado por el cliente */
-const priceOfAppointment = (appointment) => {
+/* const priceOfAppointment = (appointment) => {
     switch (appointment) {
         case "Manicure":
             return alert(`Your final price is ${tax(priceOfManicure)}`)
@@ -46,4 +46,4 @@ const priceOfAppointment = (appointment) => {
         default:
             break;
     }
-}
+} */
