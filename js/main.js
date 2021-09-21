@@ -66,12 +66,12 @@ while (input != "ESC") {
 
 /* -------------------------------  DESAFIO 4 ----------------------------------------------  */
 /* do {
-
     let appointment = prompt(service)
     if (appointment == "EXIT" || appointment == "" || appointment == "exit") break;
     let day = prompt(dayOfAppointment)
     if (day == "EXIT" || day == "" || day == "exit") break;
-    let hour = hourOfAppointment(appointment)
+    let hour = hourOfAppointment(appointment);
+    console.log(hourOfDay);
 
 
     resp = prompt(`You have selected ${appointment} for ${day} at ${hour}. Do you want to confirm? yes or no.`)
@@ -85,7 +85,7 @@ while (input != "ESC") {
 
 if (add == "no"){
     alert(`Thanks for your purchase. See you soon!`)
-} */
+}  */
 
 
 /* DESAFIO 4 COMPLEMENTARIO */
@@ -102,7 +102,7 @@ alert(`El precio final es $${precioFinal}`)
 
 /* -------------------------------  DESAFIO 5 y 6 (OBJETOS Y ARRAY) ----------------------------------------------  */
 
-const Products = [
+/* const Products = [
     {id: 1, product: 'Esmaltado permanente', price: 23100},
     {id: 2, product: 'Acrilico colores basicos',  price: 35000},
     {id: 3, product: 'Acrilico francesa o baby boomer',  price: 38000},
@@ -114,8 +114,8 @@ const Products = [
     {id: 9, product:  'Retiro de permanente otro salon',  price: 5000},
     {id: 10, product:  'Retiro de acrilico otro salon',  price: 8000},
  
-]
-
+] */
+/* 
 
 let cart = 0;
 
@@ -126,30 +126,30 @@ const weekDay = [
     {Day: 'Wednesday', Zone: 'Nuñoa'},
     {Day: 'Thursday', Zone: 'La Florida'},
     {Day: 'Friday', Zone: 'Providencia'},
-]
+] */
 
 
 
 /* Esta funcion despliega la lista de produtos dentro del array */
-const serviceList = () => {
+/* const serviceList = () => {
     let menu = 'Chose a service:\n';
     Products.forEach((product) => {
         // a lo que hay en menu "Chose a Service" le sumo lo siguiente:
         menu += product.product + "\n";});
         return prompt(`${menu} \n If you want to leave type EXIT`);
 }
-
+ */
 
 /* Esta funcion permite encontrar el dia disponible en funcion a la zona ingresada por el cliente */
-const dayList = (zone) =>{
+/* const dayList = (zone) =>{
         for (const element of weekDay){ 
             if(element.Zone === zone){
                 return alert(`The day availiable for your zone is ${element.Day}.`)}
-}}
+}} */
 
 
 /* Esta funcion despliega la lista de horas dentro del array hourOfDay */
-const hourList = () => {
+/* const hourList = () => {
     let hourMenu = `Select an hour: \n`;
     hourOfDay.forEach((hour) => {
         hourMenu += hour +  '\n';});
@@ -162,11 +162,11 @@ const addToCart = (serviceSelected) => {
     cart += (found.price * 1.19);
     alert(`You have selected: \n ${found.product}.`);
 }
-
+ */
 
 
 /* Ciclo */
-do {
+/* do {
     let serviceSelected = serviceList();
     if (serviceSelected == "EXIT") break;
     let zoneSelected = prompt('Which is your zone?');
@@ -186,4 +186,33 @@ do {
      alert(`Your appointment has a total a value of $${cart}`)}
 
      alert(`Thank you, see you soon!`);
- 
+  */
+
+/* -------------------------------  DESAFIO COMPLEMENTARIO 6 (ARRAY) ----------------------------------------------  */
+
+let numbers = [3,86,105,24,-3]
+
+numbers.sort((a,b) => {
+    if (a < b) {
+        return - 1;
+    } else if (a > b) {
+        return 1;
+    } else {
+        return 0;}
+});
+
+console.log(numbers);
+
+
+let leters = ["a","z","k","p","i"]
+
+leters.sort((a,b) => {
+    if (a < b) {
+        return - 1;
+    } else if (a > b) {
+        return 1;
+    } else {
+        return 0;}
+});
+
+console.log(leters)
