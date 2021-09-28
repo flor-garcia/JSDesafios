@@ -65,13 +65,70 @@ while (input != "ESC") {
 
 
 /* -------------------------------  DESAFIO 4 ----------------------------------------------  */
-/* do {
+/* esta funcion calcula el IVA (en Chile, por eso el 19% jajaj) */
+
+const tax = price => price * 1.19
+
+
+const priceOfAppointment = (appointment) => {
+    switch (appointment) {
+        case "Manicure":
+            return alert(`Your final price is ${tax(priceOfManicure)}`)
+            break; 
+        case "Pedicure":
+            return alert(`Your final price is ${tax(priceOfPedicure)}`)
+            break;
+        case "Manicure & Pedicure":
+            return alert(`Your final price is ${tax(priceOfManicurePedicure)}`);
+            break;
+        default:
+            break;
+    }
+}
+
+/* Servicde list */
+let service = `Select a service: 
+Manicure
+Pedicure
+Manicure & Pedicure
+
+If you want to leave type EXIT`
+
+/* Dias disponibles */
+let dayOfAppointment = `Select a day for your appointment:
+Monday
+Thuesday
+Wednesday
+Thursday
+Friday.
+
+I regreted and I want to EXIT`
+
+
+
+/* Variables declaradas */
+let appointment;
+let hour;
+let day;
+let regards = `Thanks for visiting us. See you soon!`;
+let add;
+let resp; 
+
+
+/* Price list */
+let priceOfManicure = 45000;
+let priceOfPedicure = 25000;
+let priceOfManicurePedicure = 60000; 
+
+
+
+do {
     let appointment = prompt(service)
     if (appointment == "EXIT" || appointment == "" || appointment == "exit") break;
     let day = prompt(dayOfAppointment)
     if (day == "EXIT" || day == "" || day == "exit") break;
-    let hour = hourOfAppointment(appointment);
-    console.log(hourOfDay);
+    let hour = prompt(`Select an hour from 9 am to 18 pm`);
+
 
 
     resp = prompt(`You have selected ${appointment} for ${day} at ${hour}. Do you want to confirm? yes or no.`)
@@ -85,7 +142,7 @@ while (input != "ESC") {
 
 if (add == "no"){
     alert(`Thanks for your purchase. See you soon!`)
-}  */
+} 
 
 
 /* DESAFIO 4 COMPLEMENTARIO */
@@ -190,7 +247,7 @@ const addToCart = (serviceSelected) => {
 
 /* -------------------------------  DESAFIO COMPLEMENTARIO 6 (ARRAY) ----------------------------------------------  */
 
-let numbers = [3,86,105,24,-3]
+/* let numbers = [3,86,105,24,-3]
 
 numbers.sort((a,b) => {
     if (a < b) {
@@ -215,4 +272,4 @@ leters.sort((a,b) => {
         return 0;}
 });
 
-console.log(leters)
+console.log(leters) */
